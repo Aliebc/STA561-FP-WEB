@@ -3,7 +3,7 @@ export async function POST(request: Request) {
     try {
       const preparedData = await request.json();
   
-      const response = await fetch('http://127.0.0.1:55322/eva', {
+      const response = await fetch('http://10.9.4.164:55322/eva', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(preparedData)
