@@ -82,7 +82,7 @@ export default function Home() {
     });
     setSubmitting(true); // 按下后设置为提交中
     try {
-      const response = await fetch('http://127.0.0.1:5000/eva', {
+      const response = await fetch('/eva', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(preparedData)
